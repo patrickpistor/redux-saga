@@ -6,35 +6,6 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>2B916438-F1E1-42B6-BF81-9292756778D0</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2B916438-F1E1-42B6-BF81-9292756778D0.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>reduxSaga project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>reduxSaga</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project reduxSaga with scheme reduxSaga and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>575988285.54843104</real>
-			<key>timeStoppedRecording</key>
-			<real>575988286.70723498</real>
-			<key>title</key>
-			<string>Building project reduxSaga with scheme reduxSaga and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>2B916438-F1E1-42B6-BF81-9292756778D0</string>
-		</dict>
 		<key>DEE1D085-A542-44A2-9CDB-DD701E72A90F</key>
 		<dict>
 			<key>className</key>

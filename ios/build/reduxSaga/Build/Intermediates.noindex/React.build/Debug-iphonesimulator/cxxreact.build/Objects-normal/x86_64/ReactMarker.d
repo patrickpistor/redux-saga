@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/jisapp5/devel/apps/redux-saga/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.cpp \
-  /Users/jisapp5/devel/apps/redux-saga/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.h
+  /Users/jisaamd/code/tutorials/redux-saga/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.cpp \
+  /Users/jisaamd/code/tutorials/redux-saga/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.h
