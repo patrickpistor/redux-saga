@@ -1,8 +1,8 @@
-import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Home from '../screens/Home'
 
-const TabNavigator = createBottomTabNavigator({
+const StackNavigator = createStackNavigator({
     Home: Home,
 });
 
-export default createAppContainer(TabNavigator);
+export default createAppContainer(StackNavigator);

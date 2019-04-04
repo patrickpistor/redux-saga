@@ -8,6 +8,35 @@
 		<data>
 		mUycT2xQgwv+0e5rkKPs9lnUJjc=
 		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		DQ4GPJ7FuM6H+FaCC/2wxhPSGCQ=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		HK6asLJ70IK7E4e83e8R1gxACHo=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		/8LQToTPOL9FsEsYDaACQ21Day0=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		P6P66kW7+LvLIo4WHjXGltpT8CA=
+		</data>
+		<key>Frameworks/libXCTestBundleInject.dylib</key>
+		<data>
+		xKX69bDGMJa2TcU/BC9ypZ06rsI=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		mCZtVmekpBnSdYCfNOG8MlUrRrM=
@@ -15,6 +44,26 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/reduxSagaTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		0xsghmzijXAttH3TIS7tps6eztY=
+		</data>
+		<key>PlugIns/reduxSagaTests.xctest.dSYM/Contents/Resources/DWARF/reduxSagaTests</key>
+		<data>
+		7DNUnVNbFNxWavCECT065BqpKmo=
+		</data>
+		<key>PlugIns/reduxSagaTests.xctest/Info.plist</key>
+		<data>
+		jyNALwXjcWH8aUatAmaHnel0XA8=
+		</data>
+		<key>PlugIns/reduxSagaTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		4WG62ckIQvFbamgjTCBXTJG3gZc=
+		</data>
+		<key>PlugIns/reduxSagaTests.xctest/reduxSagaTests</key>
+		<data>
+		C1qMChFdCxdITHv1TOrBTgAAYpo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -28,6 +77,129 @@
 			<key>hash2</key>
 			<data>
 			zy/wRNt8H78lwLFVmY0RtZsUHc0FNWkiidwnRqSw82o=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DQ4GPJ7FuM6H+FaCC/2wxhPSGCQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			VfVpYXVjG5OK2j8J39CP2mIMg1P5eFaYkRIJ/Hb2RSQ=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HK6asLJ70IK7E4e83e8R1gxACHo=
+			</data>
+			<key>hash2</key>
+			<data>
+			olgg9NXiZ2M1ifvjBR8uTJxtXlM5EacLdDrNxfmImoY=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/8LQToTPOL9FsEsYDaACQ21Day0=
+			</data>
+			<key>hash2</key>
+			<data>
+			C7sJpbu4qpi8/rH5JYpdQYncotP69JQ9Fiu8jrHXYvU=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P6P66kW7+LvLIo4WHjXGltpT8CA=
+			</data>
+			<key>hash2</key>
+			<data>
+			2BV684CZjHtMZHxSiwC5qc/DGXv9WIOWUc9dEU/Q1pw=
+			</data>
+		</dict>
+		<key>Frameworks/libXCTestBundleInject.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xKX69bDGMJa2TcU/BC9ypZ06rsI=
+			</data>
+			<key>hash2</key>
+			<data>
+			jJ/zKe1SwWk9KkZ4MXV01NPW4QiHpU1aZhpfTDknkp0=
+			</data>
+		</dict>
+		<key>PlugIns/reduxSagaTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0xsghmzijXAttH3TIS7tps6eztY=
+			</data>
+			<key>hash2</key>
+			<data>
+			+3oeOdeaJpyVGUZg5Fj+WLcljwh+SEB8DCb56RAQcls=
+			</data>
+		</dict>
+		<key>PlugIns/reduxSagaTests.xctest.dSYM/Contents/Resources/DWARF/reduxSagaTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7DNUnVNbFNxWavCECT065BqpKmo=
+			</data>
+			<key>hash2</key>
+			<data>
+			AMzAMliVFYsg4tBHC3ftAKq9WUgUQSjluXwiSJ0h78U=
+			</data>
+		</dict>
+		<key>PlugIns/reduxSagaTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jyNALwXjcWH8aUatAmaHnel0XA8=
+			</data>
+			<key>hash2</key>
+			<data>
+			SK7LeJT1G/Qer/qorZsOMQNmhiqPHjk0lmXWb4EttLw=
+			</data>
+		</dict>
+		<key>PlugIns/reduxSagaTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4WG62ckIQvFbamgjTCBXTJG3gZc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Vc0aHhIsHmfwclheY9a1fzQB+oInufXr/Pcx/QPq3u8=
+			</data>
+		</dict>
+		<key>PlugIns/reduxSagaTests.xctest/reduxSagaTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C1qMChFdCxdITHv1TOrBTgAAYpo=
+			</data>
+			<key>hash2</key>
+			<data>
+			kkMnLi58/81m3G2GajEvFtDM86YBpqmSxdl9Gz9DdYA=
 			</data>
 		</dict>
 	</dict>

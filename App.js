@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
 import { reducer } from "./src/state/reducer";
-import { watcherSaga } from "./src/state/sagas";
+import { watcherSaga, GIFSaga } from "./src/state/sagas";
 
 import { createStore, applyMiddleware, compose } from "redux";
 import createSagaMiddleware from "redux-saga";
 import { Provider } from "react-redux";
 
-import TabNavigator from './src/navigation/TabNavigator';
-// import Home from './src/screens/Home';
+import StackNavigator from './src/navigation/TabNavigator';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -17,16 +16,17 @@ const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
   reducer,
-  compose(applyMiddleware(sagaMiddleware))
+  applyMiddleware(sagaMiddleware)
 );
 
 sagaMiddleware.run(watcherSaga);
+sagaMiddleware.run(GIFSaga);
 
 export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <TabNavigator />
+        <StackNavigator />
       </Provider>
     );
   }
