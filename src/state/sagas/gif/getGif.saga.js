@@ -16,6 +16,7 @@ function fetchGIF() {
 
 // worker saga: makes the api call when watcher saga sees the action
 function* workerSaga() {
+    console.log('hit');
     try {
         const response = yield call(fetchGIF);
         const gif = response.data.data.fixed_height_downsampled_url;

@@ -16,7 +16,6 @@ export function quoteReducer(state = initialState, action) {
         case QUOTE_CALL_REQUEST:
             return { ...state, fetching: true, error: null };
         case QUOTE_CALL_SUCCESS:
-            alert({ ...state, fetching: false, kanye: action.kanye }.kanye)
             return { ...state, fetching: false, kanye: action.kanye };
         case QUOTE_CALL_FAILURE:
         default:

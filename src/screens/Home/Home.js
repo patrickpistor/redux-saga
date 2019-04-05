@@ -23,8 +23,7 @@ class Home extends Component {
                 style={{ flex: 1, }}
              >
                 <ImageBackground source={{ uri: gif }} style={ styles.imageBackground }>
-                    <Quote kanye={ kanye } quote={ error } fetching={ fetching } fetchingGIF={ fetchingGIF } getQuote={ onRequestKanye }/>
-                    <QButton getQuote={ () => console.log(this.props) }/>
+                    <Quote kanye={ kanye } quote={ error } fetching={ fetching } fetchingGIF={ fetchingGIF } getQuote={ onRequestKanye } getGif={ onRequestGIF } />
                 </ImageBackground>
             </GestureRecognizer>
 

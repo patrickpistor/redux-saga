@@ -5,13 +5,16 @@ import styles from './QButton.Style';
 
 export class QButton extends Component {
     render() {
+        getData = () => {
+            this.props.getQuote()
+            this.props.getGif()
+        }
         return (
             <View style={ styles.buttonContainer }>
-                <TouchableOpacity style={ styles.quoteButton } onPress={ this.props.getQuote }>
+                <TouchableOpacity style={ styles.quoteButton } onPress={ getData }>
                     <Image source={require('../../assets/images/kanye_face.png')} />
                 </TouchableOpacity>
             </View>
-
         );
     }
 }

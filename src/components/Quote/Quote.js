@@ -18,7 +18,7 @@ export class Quote extends Component {
                 </View>
 
                 {this.props.error && <Text style={{ color: "red" }}>Uh oh - something went wrong!</Text>}
-                <QButton getQuote={ this.props.getQuote }/>
+                <QButton getQuote ={ this.props.getQuote } getGif ={ this.props.getGif }/>
             </View>
         );
     }
