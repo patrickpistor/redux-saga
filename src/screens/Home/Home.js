@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import GestureRecognizer from 'react-native-swipe-gestures';
 import { connect } from "react-redux";
 import { Quote } from "../../components/Quote/Quote";
+import { QButton } from "../../components/QButton/QButton";
 import {ImageBackground, Text} from 'react-native';
 import styles from './Home.styles';
 
@@ -10,20 +11,20 @@ class Home extends Component {
         header: null
     }
 
-
     render() {
         const { fetching, fetchingGIF, kanye, gif, onRequestKanye, onRequestGIF, error } = this.props;
         return (
             <GestureRecognizer
-                onSwipeRight={() => {console.log(kanye); onRequestKanye(); onRequestGIF()}}
+                onSwipeRight={() => {onRequestKanye(); onRequestGIF()}}
                 config={{
                     velocityThreshold: 0.3,
                     directionalOffsetThreshold: 80
                 }}
                 style={{ flex: 1, }}
              >
-                <ImageBackground source={{ uri: this.props.gif }} style={ styles.imageBackground }>
+                <ImageBackground source={{ uri: gif }} style={ styles.imageBackground }>
                     <Quote kanye={ kanye } quote={ error } fetching={ fetching } fetchingGIF={ fetchingGIF } getQuote={ onRequestKanye }/>
+                    <QButton getQuote={ () => console.log(this.props) }/>
                 </ImageBackground>
             </GestureRecognizer>
 
@@ -31,21 +32,13 @@ class Home extends Component {
     }
 }
 
-// const mapStateToProps = state => {
-//     return {
-//       fetching: state.fetching,
-//       fetchingGIF: state.fetchingGIF,
-//       kanye: state.kanye,
-//       gif: state.gif,
-//       error: state.error
-//     };
-// };
-
 const mapStateToProps = state => {
     return {
-        fetching: state.fetching,
-        kanye: state.kanye,
-        error: state.error
+      fetching: state.quoteReducer.fetching,
+      fetchingGIF: state.gifReducer.fetchingGIF,
+      kanye: state.quoteReducer.kanye,
+      gif: state.gifReducer.gif,
+      error: state.error
     };
 };
 
@@ -54,9 +47,9 @@ const mapDispatchToProps = dispatch => {
       onRequestKanye: () => {
         dispatch({ type: "QUOTE_CALL_REQUEST" });
       },
-      // onRequestGIF: () => {
-      //   dispatch({ type: "GIF_CALL_REQUEST" });
-      // }
+      onRequestGIF: () => {
+        dispatch({ type: "GIF_CALL_REQUEST" });
+      }
     };
 };
 

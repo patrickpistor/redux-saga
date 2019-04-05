@@ -5,7 +5,10 @@ import createSagaMiddleware from "redux-saga";
 
 export const sagaMiddleware = createSagaMiddleware();
 
-export function configureStore(initialState = {}) {
+export function configureStore() {
     const enhancer = applyMiddleware(sagaMiddleware)
-    return createStore(rootReducer, initialState, enhancer)
+    return createStore(
+        rootReducer, 
+        enhancer
+    );
 }

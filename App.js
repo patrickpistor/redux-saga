@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import StackNavigator from './src/navigation/TabNavigator';
 
 const store = configureStore();
-
 sagaMiddleware.run(quoteSaga, gifSaga);
 
 export default class App extends Component {

@@ -35,6 +35,35 @@
 			<key>uniqueIdentifier</key>
 			<string>FDB71B7C-2F89-4DEF-83E6-D9F2D4A8100C</string>
 		</dict>
+		<key>FFE82511-235E-4B23-BC39-B42416115357</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FFE82511-235E-4B23-BC39-B42416115357.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>reduxSaga project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>reduxSaga</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project reduxSaga with scheme reduxSaga and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>576163971.15969396</real>
+			<key>timeStoppedRecording</key>
+			<real>576163972.29203904</real>
+			<key>title</key>
+			<string>Building project reduxSaga with scheme reduxSaga and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>FFE82511-235E-4B23-BC39-B42416115357</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
