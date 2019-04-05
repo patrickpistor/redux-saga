@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import { Container, Button, Text } from 'native-base';
+import { Image, TouchableOpacity, Text, View} from 'react-native';
+import styles from './QButton.Style';
+// import { Container, Button, Text } from 'native-base';
 
 export class QButton extends Component {
     render() {
         return (
-            <Container>
-                <Button onPress={ this.props.getNewQuote }>
-                    <Text>
-                        Quote
-                    </Text>
-                </Button>
-            </Container>
+            <View style={ styles.buttonContainer }>
+                <TouchableOpacity style={ styles.quoteButton } onPress={ this.props.getQuote }>
+                    <Image source={require('../../assets/images/kanye_face.png')} />
+                </TouchableOpacity>
+            </View>
+
         );
     }
 }

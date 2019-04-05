@@ -1,26 +1,13 @@
 import React, { Component } from 'react';
-
-import { reducer } from "./src/state/reducer";
-import { watcherSaga, GIFSaga } from "./src/state/sagas";
-
-import { createStore, applyMiddleware, compose } from "redux";
-import createSagaMiddleware from "redux-saga";
+import { quoteSaga } from "./src/state/sagas/quote/getQuote.saga";
+import { gifSaga } from "./src/state/sagas/gif/getGif.saga";
+import { configureStore, sagaMiddleware} from './src/state/configureStore';
 import { Provider } from "react-redux";
-
 import StackNavigator from './src/navigation/TabNavigator';
 
-const sagaMiddleware = createSagaMiddleware();
+const store = configureStore();
 
-// const reduxDevTools =
-//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
-
-const store = createStore(
-  reducer,
-  applyMiddleware(sagaMiddleware)
-);
-
-sagaMiddleware.run(watcherSaga);
-sagaMiddleware.run(GIFSaga);
+sagaMiddleware.run(quoteSaga, gifSaga);
 
 export default class App extends Component {
   render() {

@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import GestureRecognizer from 'react-native-swipe-gestures';
 import { connect } from "react-redux";
-import { Quote } from "../components/Quote/Quote";
-import { QButton } from "../components/QButton/QButton";
+import { Quote } from "../../components/Quote/Quote";
+import {ImageBackground, Text} from 'react-native';
+import styles from './Home.styles';
 
 class Home extends Component {
     static navigationOptions = {
         header: null
     }
+
+
     render() {
         const { fetching, fetchingGIF, kanye, gif, onRequestKanye, onRequestGIF, error } = this.props;
         return (
@@ -17,23 +20,32 @@ class Home extends Component {
                     velocityThreshold: 0.3,
                     directionalOffsetThreshold: 80
                 }}
-                style={{ flex: 1, }} 
+                style={{ flex: 1, }}
              >
-                <Quote kanye={ kanye } quote={ error } gif={ gif } fetching={ fetching } fetchingGIF={ fetchingGIF }/>
-                <QButton getNewQuote={ () => { onRequestKanye() } }/>
+                <ImageBackground source={{ uri: this.props.gif }} style={ styles.imageBackground }>
+                    <Quote kanye={ kanye } quote={ error } fetching={ fetching } fetchingGIF={ fetchingGIF } getQuote={ onRequestKanye }/>
+                </ImageBackground>
             </GestureRecognizer>
 
         );
     }
 }
 
+// const mapStateToProps = state => {
+//     return {
+//       fetching: state.fetching,
+//       fetchingGIF: state.fetchingGIF,
+//       kanye: state.kanye,
+//       gif: state.gif,
+//       error: state.error
+//     };
+// };
+
 const mapStateToProps = state => {
     return {
-      fetching: state.fetching,
-      fetchingGIF: state.fetchingGIF,
-      kanye: state.kanye,
-      gif: state.gif,
-      error: state.error
+        fetching: state.fetching,
+        kanye: state.kanye,
+        error: state.error
     };
 };
 
@@ -42,9 +54,9 @@ const mapDispatchToProps = dispatch => {
       onRequestKanye: () => {
         dispatch({ type: "QUOTE_CALL_REQUEST" });
       },
-      onRequestGIF: () => {
-        dispatch({ type: "GIF_CALL_REQUEST" });
-      }
+      // onRequestGIF: () => {
+      //   dispatch({ type: "GIF_CALL_REQUEST" });
+      // }
     };
 };
 
