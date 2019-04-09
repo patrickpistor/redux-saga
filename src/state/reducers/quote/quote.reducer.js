@@ -8,7 +8,8 @@ import {
 const initialState = {
     fetching: false,
     kanye: null,
-    error: null
+    error: null,
+    quotes: [],
 };
 
 export function quoteReducer(state = initialState, action) {

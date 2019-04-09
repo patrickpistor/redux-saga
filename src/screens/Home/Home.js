@@ -6,6 +6,27 @@ import { QButton } from "../../components/QButton/QButton";
 import {ImageBackground, Text} from 'react-native';
 import styles from './Home.styles';
 
+const mapStateToProps = state => {
+    return {
+        fetching: state.quoteReducer.fetching,
+        fetchingGIF: state.gifReducer.fetchingGIF,
+        kanye: state.quoteReducer.kanye,
+        gif: state.gifReducer.gif,
+        error: state.error
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onRequestKanye: () => {
+            dispatch({ type: "QUOTE_CALL_REQUEST" });
+        },
+        onRequestGIF: () => {
+            dispatch({ type: "GIF_CALL_REQUEST" });
+        }
+    };
+};
+
 class Home extends Component {
     static navigationOptions = {
         header: null
@@ -31,26 +52,6 @@ class Home extends Component {
     }
 }
 
-const mapStateToProps = state => {
-    return {
-      fetching: state.quoteReducer.fetching,
-      fetchingGIF: state.gifReducer.fetchingGIF,
-      kanye: state.quoteReducer.kanye,
-      gif: state.gifReducer.gif,
-      error: state.error
-    };
-};
-
-const mapDispatchToProps = dispatch => {
-    return {
-      onRequestKanye: () => {
-        dispatch({ type: "QUOTE_CALL_REQUEST" });
-      },
-      onRequestGIF: () => {
-        dispatch({ type: "GIF_CALL_REQUEST" });
-      }
-    };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+const reduxConnected = connect(mapStateToProps, mapDispatchToProps)
+export default  reduxConnected(Home)
 
